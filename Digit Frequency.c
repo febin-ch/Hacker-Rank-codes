@@ -1,3 +1,23 @@
+//shorttieee array position wise!
+#include <stdio.h>
+
+int main() {
+    char str[1000];
+    int digitCount[10] = {0}; 
+    scanf("%s", str);
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= '0' && str[i] <= '9') {
+            digitCount[str[i] - '0']++;
+        }
+    }
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", digitCount[i]);
+    }
+    return 0;
+}
+
+
+//long mine
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
